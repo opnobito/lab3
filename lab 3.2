@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    int a, b, c;
+    float disc;
+
+    printf("Введіть коефіцієнти a, b, c: ");
+    scanf("%d %d %d", &a, &b, &c);
+    
+    disc = b*b - 4*a*c ;
+    
+    if (disc > 0) {
+        printf("Квадратне рівняння має два різних дійсних корені\n");
+    } else if (disc == 0) {
+        printf("Квадратне рівняння має один дійсний корінь\n");
+    } else {
+        printf("Квадратне рівняння не має дійсних коренів\n");
+    }
+
+    return 0;
+}
